@@ -9,12 +9,5 @@ import colorSensor
 
 
 
-oaraimunka=ColorSensor.Feladatok()
-
-
 peldany = colorSensor.Feladatok()
-#peldany.rgb()  
-#peldany.ambient()
 peldany.feladat()
-
-ev3.speaker.beep()
