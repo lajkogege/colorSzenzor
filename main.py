@@ -7,8 +7,8 @@ from pybricks.robotics import DriveBase
 from pybricks.media.ev3dev import SoundFile, ImageFile
 import ColorSensor
 
+import ColorSensor
 
-ev3 = EV3Brick()
 
 
 
