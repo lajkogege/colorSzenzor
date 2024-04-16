@@ -8,7 +8,9 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 import ColorSensor
 
 
-ev3 = EV3Brick()
+
+oaraimunka=ColorSensor.Feladatok()
+
 
 
 
