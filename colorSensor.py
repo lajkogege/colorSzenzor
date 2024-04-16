@@ -8,24 +8,24 @@ from pybricks.media.ev3dev import SoundFile, ImageFile
 
 class Feladatok():
  
- def __init__(self):
-        # tégla
-        self.ev3 = EV3Brick()
-        # motorok
-        self.jm = Motor(Port.B)
-        self.bm = Motor(Port.C)
-        self.km = Motor(Port.A)
-        # szenzorok
-        self.cs = ColorSensor(Port.S3)
-        self.ts = TouchSensor(Port.S1)
-        self.gs = GyroSensor(Port.S2)
-        self.us = UltrasonicSensor(Port.S4)
-        #self.ir = InfraredSensor(Port.S4)
+       def __init__(self):
+              # tégla
+              self.ev3 = EV3Brick()
+              # motorok
+              self.jm = Motor(Port.B)
+              self.bm = Motor(Port.C)
+              self.km = Motor(Port.A)
+              # szenzorok
+              self.cs = ColorSensor(Port.S3)
+              self.ts = TouchSensor(Port.S1)
+              self.gs = GyroSensor(Port.S2)
+              self.us = UltrasonicSensor(Port.S4)
+              #self.ir = InfraredSensor(Port.S4)
 
 
- def rgb(self):
-       
+       def rgb(self):
+              
 
 
 
- def ambient(self):
+       def ambient(self):
