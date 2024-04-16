@@ -21,3 +21,10 @@ class Feladatok():
         self.gs = GyroSensor(Port.S2)
         self.us = UltrasonicSensor(Port.S4)
         #self.ir = InfraredSensor(Port.S4)
+
+
+ def rgb(self):
+
+
+
+ def ambient(self):
