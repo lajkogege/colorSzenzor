@@ -5,11 +5,14 @@ from pybricks.parameters import Port, Stop, Direction, Button, Color
 from pybricks.tools import wait, StopWatch, DataLog
 from pybricks.robotics import DriveBase
 from pybricks.media.ev3dev import SoundFile, ImageFile
-import ColorSensor
+import colorSensor
 
 
 ev3 = EV3Brick()
 
-
+peldany = colorSensor.Feladatok()
+#peldany.rgb()  
+#peldany.ambient()
+peldany.feladat()
 
 ev3.speaker.beep()
