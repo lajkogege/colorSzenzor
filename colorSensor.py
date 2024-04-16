@@ -24,8 +24,8 @@ class Feladatok():
 
 
        def rgb(self):
-              
+              print(self.rgb())
 
 
 
-       def ambient(self):
+       #def ambient(self):
