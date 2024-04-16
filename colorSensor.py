@@ -41,7 +41,7 @@ class Feladatok():
 
        def feladat(self):
               szinLista =  []
-              if(self.cs.ambient() >= 4):
+              if(self.cs.ambient() >= 2):
                      self.robot.drive(100,0)
                      self.ido.reset()
                      while(self.ido.time() < 3000):
@@ -53,3 +53,21 @@ class Feladatok():
               wait(3000)
               print(szinLista)                        
 
+       def feladatVonalKovetes(self):
+              if(self.cs.ambient() >= 2):
+                     self.robot.drive(50,0)
+                     self.ido.reset()
+                     while(self.ido.time() < 3000):
+                            szin = self.cs.color()
+                            if(szin == Color.YELLOW):
+                                   self.robot.turn(120)
+                                   self.robot.drive(50,0)
+                            elif(szin == Color.RED):
+                                   self.robot.turn(120)
+                                   self.robot.drive(50,0)
+                            elif(szin == Color.BLACK):
+                                   self.robot.turn(-120)
+                                   self.robot.drive(50,0)
+                            elif(szin == Color.GREEN):
+                                   self.robot.turn(360)
+                                   self.robot.drive(50,0)
