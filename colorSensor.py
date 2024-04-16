@@ -24,6 +24,7 @@ class Feladatok():
 
 
  def rgb(self):
+       
 
 
 
