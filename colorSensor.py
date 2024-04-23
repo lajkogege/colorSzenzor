@@ -60,3 +60,4 @@ class Feladatok():
                      self.robot.stop(Stop.BRAKE)      
               wait(1000)
               print(szinLista)                        
+
