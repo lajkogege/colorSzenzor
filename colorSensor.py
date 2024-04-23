@@ -41,15 +41,22 @@ class Feladatok():
 
        def feladat(self):
               szinLista =  []
-              if(self.cs.ambient() >= 4):
+              if(self.cs.ambient() >= 2):
                      self.robot.drive(100,0)
                      self.ido.reset()
                      while(self.ido.time() < 3000):
                             szin = self.cs.color()
-                            if(szin != Color.WHITE):
+                            if szin == Color.BLACK:
+                                   szin = "Fekete"
+                            if szin == Color.YELLOW:
+                                   szin = "Sarga"
+                            if szin == Color.RED:
+                                   szin = "Piros"
+                            if szin == Color.GREEN:
+                                   szin = "Zold"
+                            if(szin != Color.WHITE and szin != Color.BLUE):
                                    if szin not in szinLista:
                                           szinLista.append(szin)
                      self.robot.stop(Stop.BRAKE)      
-              wait(3000)
+              wait(1000)
               print(szinLista)                        
-
